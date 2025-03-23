@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Намери с Лупичката</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/magnifier.css') }}">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Намери предметите с лупичката!</h1>
+        <div id="score">Точки: 0</div>
+
+        <div id="game-area">
+            <div id="find-items">
+                <div id="overlay"></div> <!-- Overlay, но само над предметите -->
+            </div>
+        </div>
+
+        <div id="magnifying-glass">
+            <div id="glass"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/magnifier.js') }}"></script>
+</body>
+</html>
