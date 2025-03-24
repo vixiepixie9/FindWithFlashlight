@@ -37,6 +37,16 @@ body {
     text-align: center;
 }
 
+#game-area {
+    position: relative;
+    width: 800px; /* Размери на игралната зона */
+    height: 600px;
+    margin: 0 auto;
+    background: url('/static/images/classroom.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden; /* За да не излиза overlay-а извън границите */
+}
+
 #find-items {
     position: absolute;
     width: 100%;
@@ -64,26 +74,22 @@ body {
     display: none;
 }
 
-#glass {
+/* #glass {
     position: absolute;
-    width: 100%; /* размер на стъклото на лупата */
-    height: 100%; /* размер на стъклото на лупата */
+    width: 100%; 
+    height: 100%;
     background-color: transparent;
     border: 2px solid white;
     border-radius: 50%;
 }
 
 #magnifying-glass:hover #glass {
-    background-color: rgba(255, 255, 255, 0.5); /* правим стъклото малко по-ярко при hover */
-}
+    background-color: rgba(255, 255, 255, 0.5);
+} */
 
 .game-item {
     position: absolute;
     width: 50px;
     height: 50px;
     cursor: pointer;
-}
-
-.found {
-    opacity: 0.5; /* Намерени предмети стават по-прозрачни */
 }
