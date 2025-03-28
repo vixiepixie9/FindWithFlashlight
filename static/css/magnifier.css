@@ -39,12 +39,12 @@ body {
 
 #game-area {
     position: relative;
-    width: 800px; /* Размери на игралната зона */
+    width: 800px;
     height: 600px;
     margin: 0 auto;
     background: url('/static/images/classroom.jpg') no-repeat center center;
     background-size: cover;
-    overflow: hidden; /* За да не излиза overlay-а извън границите */
+    overflow: hidden;
 }
 
 #find-items {
@@ -57,7 +57,7 @@ body {
 
 .item {
     position: absolute;
-    background-color: rgba(255, 0, 0, 0.5); /* Пример за визуализиране на обектите */
+    background-color: rgba(255, 0, 0, 0.5);
     width: 40px;
     height: 40px;
     border-radius: 50%;
