@@ -9,6 +9,7 @@ body {
     text-align: center;
     margin: 0;
     overflow: hidden;
+    background-color: #000000;
 }
 
 #overlay {
@@ -17,7 +18,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgb(0, 0, 0, 0.9);
     pointer-events: none;
     z-index: 2;
     mix-blend-mode: multiply;
@@ -27,11 +28,10 @@ body {
 
 #game-container {
     position: relative;
-    width: 80%;
-    height: 500px;
-    margin: 20px auto;
-    background-color: #fff;
-    border: 2px solid #ddd;
+    width: 800px;
+    height: 600px;
+    margin: 200px auto 20px auto;
+    background-color: #ffffff;
     overflow: hidden;
     z-index: 1;
     text-align: center;
@@ -64,32 +64,57 @@ body {
 }
 
 #magnifying-glass {
-    /* position: fixed;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    pointer-events: none;
-    mix-blend-mode: destination-out;
-    z-index: 3; */
     display: none;
 }
-
-/* #glass {
-    position: absolute;
-    width: 100%; 
-    height: 100%;
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 50%;
-}
-
-#magnifying-glass:hover #glass {
-    background-color: rgba(255, 255, 255, 0.5);
-} */
 
 .game-item {
     position: absolute;
     width: 50px;
     height: 50px;
     cursor: pointer;
+}
+
+.game-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: linear-gradient(to bottom, #052813 20%, #000000 100%);
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.title-container {
+    font-family: 'CRAMPS', sans-serif;
+    color: #d2ecd8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-shadow: 1px 1px 3px black;
+}
+
+.game-title {
+    font-size: 24px;
+    margin: 0;
+    color: #ffffff;
+}
+
+.game-header h2 {
+    font-size: 16px;
+    color: #d2ecd8;
+    margin: 0;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px black;
+}
+
+.game-score {
+    font-size: 18px;
+    background-color: rgba(121, 117, 117, 0.168);
+    color: #d2ecd8;
+    padding: 6px 14px;
+    text-shadow: 1px 1px 3px black;
+    display: inline-block;
 }

@@ -11,7 +11,11 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 file_path = os.path.join(os.path.dirname(__file__), "items.xlsx")
 
 @app.route('/')
-def index():
+def front():
+    return render_template('front.html')
+
+@app.route('/game')
+def game():
     return render_template('magnifier.html')
 
 @app.route('/items', methods=['GET'])

@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Намери с Лупичката</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/magnifier.css') }}">
+    <link href="https://fonts.cdnfonts.com/css/cramps-2" rel="stylesheet">
+                
+                
 </head>
 <body>
+
+    <div class="game-header">
+        <div class="title-container">
+            <h1>FIND OBJECTS WITH THE MAGNIFIER</h1>
+            <h2>раздел "Информатика"</h2>
+        </div>
+        <div class="game-score">Точки: 0</div>
+    </div>
+
     <div id="game-container">
-        <h1>Намери предметите с лупичката!</h1>
-        <div id="score">Точки: 0</div>
             
         <div id="game-area">
             <div id="overlay"></div>
