@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, 100);
             }
         } else {
-            alert('Край на играта! Избрахте грешен предмет.');
+            alert('Край на играта! Избрахте грешен предмет :(');
             resetGame();
         }
     }

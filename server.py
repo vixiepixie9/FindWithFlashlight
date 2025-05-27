@@ -7,7 +7,7 @@ import os
 app = Flask(__name__, static_url_path='/static')
 CORS(app, resources={r"/*": {"origins": "*"}})
 
-#file_path = "D:\UE MWT\Клиентско уеб програмиране\FindWithMagnifier\items.xlsx"
+#file_path = "D:\UE MWT\Клиентско уеб програмиране\FindWithFlashlight\items.xlsx"
 file_path = os.path.join(os.path.dirname(__file__), "items.xlsx")
 
 @app.route('/')
@@ -16,7 +16,7 @@ def front():
 
 @app.route('/game')
 def game():
-    return render_template('magnifier.html')
+    return render_template('flashlight.html')
 
 @app.route('/items', methods=['GET'])
 def get_items():
