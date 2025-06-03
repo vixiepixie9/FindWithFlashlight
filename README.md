@@ -3,7 +3,7 @@
 To run the project:
 1. Go to master branch.
 2. Download the zip folder.
-3. Exctract files.
+3. Extract files.
 4. Open the folder in VSC.
 5. Run Without Debugging with Anaconda Interpreter the server.py file.
   ![Screenshot 2025-06-03 203527](https://github.com/user-attachments/assets/4fea554e-b287-4b34-8c50-a26dc85ca776)
