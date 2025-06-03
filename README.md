@@ -1,6 +1,10 @@
 # FindWithFlashlight
 
 To run the project:
-1. Run Without Debugging the server.py file.
-2. Click the 'Go Live' button down on the right.
-3. Press Play and enjoy :)
+1. Go to master branch.
+2. Download the zip folder.
+3. Exctract files.
+4. Open the folder in VSC.
+5. Run Without Debugging with Anaconda Interpreter the server.py file.
+6. Click the 'Go Live' button down on the right.
+7. Press Play and enjoy :)
